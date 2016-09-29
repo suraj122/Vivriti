@@ -1,0 +1,522 @@
+body {
+	font-family: 'Roboto Slab', serif;
+	padding-top:55px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Roboto Slab', serif;
+}
+.btn {
+	background: #b2064f;
+	outline:none;
+	border:0;
+	color:#fff;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+	outline: none;
+	border:0;
+	background: #b2064f;
+	box-shadow: none;
+}
+.btn:active {
+	outline:none;
+	border:0;
+	background: #b2064f;
+	box-shadow: none;
+}
+.btn:hover {
+	background: #b2064f - 60;
+	outline:none;
+	border:0;
+	box-shadow: none;
+}
+
+// Navigation Bar
+nav {
+	height:55px;
+	background:#b2064f;
+	.navbar-brand {
+		width: 130px;
+		margin-top: -8px;
+		img {
+			margin-top: 0;
+			margin-left: 17px;
+		}
+	}
+	.nav-right{
+		display: flex;
+		padding-right:15px;
+		padding-top:10px;
+		float: right;
+	
+		li{
+			margin-right: 15px;
+			margin-top: -3px;
+			a {
+				height: 40px;
+				width: 40px;
+				text-align: center;
+				border-radius:50%;
+				border:0;
+				box-shadow:none;
+				color: #fff;
+				padding-left:13px;
+			}
+		}
+	}
+}
+.nav>li>a:hover, .nav>li>a:focus, nav li .active {
+	background:#35449a;
+	box-shadow:none;
+	border:0;
+}
+
+// Home Page
+.home-page {
+
+	.main-view {
+		width:100%;
+		height:550px;
+		background: url('../images/8.jpg') no-repeat center center;
+		background-size:cover;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+
+	  .programs {
+	  	cursor: pointer;
+	  	background:linear-gradient(130deg, #2846a1, #c22945);
+			background-size:400% 400%;
+			animation: gradient 16s ease infinite;
+	  	height: 340px;
+	  	width: 340px;
+	  	margin-top: 50px;
+	  	border-radius:50%;
+	  	h3 {
+	  		margin-top: 60px;
+	  		color: #ffc107;
+	  		font-weight: 600;
+	  		letter-spacing: .08em;
+	  	}
+	  	a{
+	  		text-decoration: none;
+	  	}
+	  	a:hover {
+	  		text-decoration: none;
+	  	}
+	  	ul {
+	  		-webkit-padding-start:0;
+	  		margin-top: 30px;
+	  	}
+	  	li {
+	  		color: #74cfe4;
+	  		font-weight: 600;
+	  		letter-spacing: .15em;
+	  		list-style: none;
+	  		font-family: 'Shadows Into Light', cursive;
+	  		font-size: 16px;
+	  	}
+	  	.btn {
+	  		margin-top: 20px;
+	  		border-radius:20px;
+	  	}
+	  }
+	}
+
+	@keyframes gradient {
+		0%{
+			background-position:5% 0%;
+		}
+		50% {
+			background-position:96% 100%;
+		}
+		100% {
+			background-position:5% 0%;
+		}
+	}
+
+	// School
+	.school {
+		padding:0;
+	}
+	.about-school {
+		width: 100%;
+		padding:40px 0;
+		background:linear-gradient(130deg, rgba(252,53,76,0.7), rgba(10,191,188,0.7));
+		background-size:400% 400%;
+		animation: gradient 16s ease infinite;
+
+		h1 {
+			color: #fff;
+			margin-bottom: 40px;
+			font-size: 44px;
+		}
+
+		p {
+			color: #eee;
+		}
+		.btn {
+			margin:30px 0;
+			border-radius:20px;
+		}
+	}
+}
+
+// Program Details
+.program-details {
+	padding:60px 0;
+	background:#f6f6f6;
+	// background: linear-gradient(to right, #C9FFBF, #FFAFBD);
+
+	.container {
+		padding-left: 0;
+	}
+	.row:last-child{
+		padding-top:15px;
+	}
+
+	h1 {
+		font-size: 48px;
+		color: #03aaee;
+		font-weight: 600;
+		margin-bottom: 60px;
+	}
+
+	h2 {
+		margin:0;
+		padding-top:20px;
+		font-size: 36px;
+		color: #fff;
+	}
+	
+	.btn {
+		position:absolute;
+		bottom:40px;
+		margin-left:-40px;
+		border-radius:20px;
+	}
+	.padding-right {
+		padding-right:0;
+	}
+	.preschool {
+		height: 300px;
+		background:url('../images/4.jpg');
+		background-size:100% 100%;
+		padding:0;
+		margin-bottom: 0px;
+	}
+	.pre {
+		width: 100%;
+		background: rgba(23, 24, 24, 0.7);
+		// background: -webkit-radial-gradient( rgba(120,2,6,0.8) , rgba(6,17,97,0.8));
+		// background: radial-gradient(rgba(120,2,6,0.8) , rgba(6,17,97,0.8));
+		// background-size:100% 100%;
+		height: 300px;
+	}
+	.enrichment {
+		height: 300px;
+		background: url('../images/23.jpg');
+		background-size:100% 100%;
+		padding:0;
+	}
+	.project {
+		background:url('../images/26.jpg');
+		background-size:100% 100%;
+		padding:0;
+		margin-bottom: 15px;
+	}
+	.summercamp {
+		background:url('../images/25.jpg');
+		background-size:100% 100%;
+		padding:0;
+		margin-bottom: 15px;
+	}
+	.childcare {
+		background:url('../images/2.jpg');
+		background-size:100% 100%;
+		padding:0;
+	}
+}
+.secondary-nav {
+	z-index:1;
+	position: fixed;
+	width:100%;
+	padding:30px 0 20px 0;
+	background:#ddd;
+	ul {
+		display: flex;
+		justify-content: space-around;
+		white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+	}
+	li {
+		list-style: none;
+		padding:2px 20px;	
+
+		a:hover, .active {
+			font-weight:700;
+			text-decoration: none;
+			border-bottom:2px solid #3399f3;
+		}
+	}
+}
+
+// About
+.about {
+	background:#eee;
+	padding:80px 0 40px 0;
+	img {
+		margin-left: 25px;
+		height: 300px;
+		width: 300px;
+		border-radius:50%;
+	}
+	p{
+		color: #333;
+		padding:20px 0px;
+	}
+}
+
+// contacts
+.contacts {
+	padding:60px 0;
+	h2 {
+		color: #072670;
+		font-weight: 600;
+	}
+	.padding {
+		padding:42px 0;
+	}
+	.btn {
+		margin-top:40px;
+		margin-bottom: 40px;
+		border-radius:25px;
+	}
+	.fa {
+		font-size: 20px;
+		border-radius:50%;
+		height: 30px;
+		width: 45px;
+		color:#fff;
+		margin:20px 0;
+	}
+	.fa-facebook:before {
+		background:#3b5998;
+		padding:10px 15px;
+		border-radius:50%;
+	}
+	.fa-google-plus:before {
+		background:#db4437;
+		padding:12px 10px;
+		border-radius:50%;
+		margin-left: 30px;
+	}
+	.fa-twitter:before {
+		margin-left: 60px;
+		background:#1da1f2;
+		padding:10px 10px;
+		border-radius:50%;
+	}
+	address {
+		line-height: 2em;
+		color: #000;
+	}
+	h4 {
+		color: #000;
+	}
+	iframe {
+		padding:0;
+	}
+}
+
+.school-integral {
+	background: linear-gradient(#130b19,#53346D);
+ 	// background-image: url("../images/bg.png");
+}
+
+// Management
+.management {
+	padding:115px 0 70px 0;;
+  
+
+  h1 {
+  	color: #fff;
+  	font-size: 44px;
+  	margin-bottom: 80px;
+  }
+  h4,h5 {
+  	color: #dfd4d4;
+  }
+	img {
+		height: 150px;
+		width: 150px;
+		background:#fff;
+		border-radius:50%;
+		margin-left: 50px;
+	}
+	.btn {
+		margin-top: 20px;
+		border-radius:20px;
+	}
+}
+
+// Staff
+.staff {
+	@extend .management;
+	.row {
+		margin-bottom: 40px;
+	}
+	.row:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+// Advisory Panel 
+.advisory-panel {
+	@extend .staff;
+}
+
+
+// Collaborations 
+.collaborations {
+	@extend .staff;
+	img {
+		border-radius:0;
+		height: auto;
+		width: auto;
+		margin-left: 0;
+	}
+	.guru {
+		h3{
+			margin-top: 0;
+		}
+		.btn {
+			margin-top: 70px;
+		}
+	}
+	h3 {
+		color: #fff;
+	}
+	p {
+		color: #fff;
+	}
+}
+
+
+// Tie-Ups 
+.tie-ups {
+	@extend .collaborations;
+}
+
+// Footer
+.footer{
+	background: #b2064f;
+	footer {
+	color:#fff;
+	display: flex;
+	justify-content: space-between;
+	margin-top:17px;
+	}
+	ul {
+		display: flex;
+	}
+	li {
+		list-style: none;
+		margin-left: 20px;
+		a {
+			color: #fff;
+			font-weight: 400;
+			letter-spacing: 0.1em;
+		}
+	}
+	small {
+		margin-top: -3px;
+	}
+}
+
+.gallery {
+	background: linear-gradient(#130b19,#53346D);
+	// background-image:url('../images/robots.png');
+
+	.row {
+		margin-top: 30px;
+		margin-bottom: 24px;
+	}
+	img {
+		cursor: pointer;
+		border-radius:5px;
+	}
+}
+.gallery-modal {
+}
+.modal-dialog {
+		width: 60%;
+		margin: 40px auto;
+	}
+
+
+
+// Responsive Settings 
+
+@media screen and (max-width: 767px) {
+	.navbar {
+		.navbar-collapse{
+			background:#b2064f;
+			border:0;
+			box-shadow:none;
+		}
+		.navbar-nav {
+			margin-right: -14px;
+			padding: 0 20px;
+			li {
+				border-radius:0;
+				width: 100%;
+				text-align: left;
+				background:#b2064f;
+				border-bottom: 1px solid #777;
+				&:hover {
+					background:#b2064f;
+				}
+				a {
+					border-radius:0;
+				}
+			}
+			li:last-child {
+					border-bottom:0;
+					padding-bottom: 0;
+				}
+		}
+	}
+	.preschool {
+		margin-bottom: 15px !important;
+	}
+	.contacts{
+		.padding {
+			padding:40px 0;
+		}
+		.row {
+			text-align: center;
+		}
+		label {
+			text-align: left;
+		}
+		.contact-logo {
+			display: flex;
+			justify-content: center;
+		}
+		.social-icons {
+			margin-right: 60px;
+		}
+	}
+	.footer {
+		footer {
+			flex-direction: column;
+			align-items:center;
+			li {
+				margin: 10px 30px 0 0;
+			}
+		}
+	}
+}
