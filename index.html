@@ -303,5 +303,21 @@
 		<script src="scripts/bootstrap.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
  		<script src="Hello World"></script>
+ 		<script type="text/javascript">
+ 			$(function() {
+  			$('.main-view a[href*="#"]:not([href="#"])').click(function() {
+    			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      		var target = $(this.hash);
+      		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      		if (target.length) {
+        		$('html, body').animate({
+         		 scrollTop: target.offset().top
+        		}, 1000);
+        		return false;
+      			}
+    			}
+  			});
+			});
+ 		</script>
 	</body>
 </html>

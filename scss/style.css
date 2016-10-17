@@ -5,6 +5,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif; }
 
+a:focus {
+  outline: 0; }
+
 .btn {
   background: #b2064f;
   outline: none;
@@ -201,9 +204,13 @@ nav {
 
 .about {
   background: #eee;
-  padding: 80px 0 40px 0; }
+  padding: 120px 0 40px 0; }
+  .about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .about img {
-    margin-left: 25px;
     height: 300px;
     width: 300px;
     border-radius: 50%; }
@@ -254,6 +261,15 @@ nav {
 .school-integral {
   background: linear-gradient(#130b19, #53346D); }
 
+.mt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px; }
+  .mt:last-child {
+    margin-bottom: 0; }
+
 .management, .staff, .advisory-panel, .collaborations, .tie-ups {
   padding: 115px 0 70px 0; }
   .management h1, .staff h1, .advisory-panel h1, .collaborations h1, .tie-ups h1 {
@@ -266,8 +282,7 @@ nav {
     height: 150px;
     width: 150px;
     background: #fff;
-    border-radius: 50%;
-    margin-left: 50px; }
+    border-radius: 50%; }
   .management .btn, .staff .btn, .advisory-panel .btn, .collaborations .btn, .tie-ups .btn {
     margin-top: 20px;
     border-radius: 20px; }
