@@ -275,8 +275,10 @@ nav {
     color: #fff;
     font-size: 44px;
     margin-bottom: 80px; }
-  .management h4, .staff h4, .advisory-panel h4, .collaborations h4, .tie-ups h4, .management h5, .staff h5, .advisory-panel h5, .collaborations h5, .tie-ups h5 {
+  .management h4, .staff h4, .advisory-panel h4, .collaborations h4, .tie-ups h4 {
     color: #dfd4d4; }
+  .management h6, .staff h6, .advisory-panel h6, .collaborations h6, .tie-ups h6 {
+    color: #aaa; }
   .management img, .staff img, .advisory-panel img, .collaborations img, .tie-ups img {
     height: 150px;
     width: 150px;
@@ -303,7 +305,7 @@ nav {
 .collaborations h3, .tie-ups h3 {
   color: #fff; }
 .collaborations p, .tie-ups p {
-  color: #fff; }
+  color: #aaa; }
 
 .footer {
   background: #b2064f; }
